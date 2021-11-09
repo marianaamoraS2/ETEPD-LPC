@@ -1,0 +1,124 @@
+print('DIGITE APENAS O NÚMERO QUE REPRESENTA A OPÇÃO QUE DESEJA\n')
+print('TELA INICIAL\n \n[1 - COMEÇAR] \n[2 - CONTINUAR] \n[3 - CONFIGURAÇÕES] \n[4 - SAIR DO JOGO]\n') # \n significa pular linha.
+resposta = int(input('Escolha uma opção: '))
+
+  # BOTÃO COMEÇAR BA TELA INICIAL
+while resposta == 1:
+  print(' ')
+  print('Você deseja começar um novo progresso ?')
+  print('\n[5 - VOLTAR] \n[6 - CONFIRMAR]')
+  resposta = int(input(' \nEscolha uma opção: '))
+
+  # BOTÃO "VOLTAR"
+  while resposta == 5: 
+    print('TELA INCIAL\n')
+    print('[1 - COMEÇAR] \n[2 - CONTINUAR] \n[3 - CONFIGURAÇÕES] \n[4 - SAIR DO JOGO]\n')
+    resposta = int(input('Escolha uma opção: '))
+
+  # BOTÃO CONFIRMAR
+  if resposta == 6:
+    print(' ')
+    print('Bem vindo ao jogo!!! Esta é a cidade do Recife, uma cidade que apresenta problemas de água e saneamento básico.')
+    nome_progresso = input('Digite o nome do progresso: ')
+    print(' ')
+    print('O progresso {} foi salvo com sucesso. Bem vindo!!!'.format(nome_progresso))
+    break
+
+    # BOTÃO CONTINUAR NA TELA INICIAL
+while resposta == 2:
+  print('PROGRESSOS\n')
+  print('[1 - PROGRESSO] \n[2 - PROGRESSO] \n[3 - PROGRESSO]\n')
+  progresso = input('Digite o nome que deseja ao seu progresso: ')
+  print('Bem vindo de volta a(o) {}'.format(progresso))
+  break
+
+while resposta == 3: #TELA DE CONFIGURAÇÕES
+  print('\nTELA DE CONFIGURAÇÕES\n')
+  print('[1 - GRÁFICOS] \n[2 - VOLUME DA MÚSICA] \n[3 - VOLUME DOS EFEITOS SONOROS] \n[4 - VOLTAR]')
+  conf = int(input('\nDigite o número da opção que deseja:\n'))
+  if conf == 1: 
+    print('\nQual gráfico você gostaria de utilizar?\n')
+    print('[4 - LEVE] \n[5 - MÉDIO] \n[6 - ALTO]')
+    grafico = int(input('\nDigite o número da opção de gráfico\n'))
+    if grafico == 4: # BAIXO
+      print('\nSeu gráfico foi modificado para leve com sucesso! Seu jogo ficará com o gráfico mais suave.')
+      break # Voltar para a página "CONFIGURAÇÕES"
+    if grafico == 5: #MÉDIO
+      print('\nSeu gráfico foi modificado para médio com sucesso! Seu jogo ficará com o gráfico mais mediano.')
+      break # Voltar para a página "CONFIGURAÇÕES"
+    if grafico == 6: # ALTO
+      print('\nSeu gráfico foi modificado para alto com sucesso! Seu jogo ficará com o gráfico mais pesado.')
+      break # Voltar para a página "CONFIGURAÇÕES"
+  if conf == 2:
+      print('\nDigite de 0 a 100 para definir o volume da música\n')
+      musica = int(input('Digite o volume da música: '))
+      print(musica * '.')
+      print('\nO volume da musica foi alterado com sucesso!')
+      break
+  if conf == 3:
+     print('\nDigite de 0 a 100 para definir o volume dos efeitos sonoros\n')
+     efeito_s = int(input('Digite o volume dos efeitos sonoros: '))
+     print(efeito_s * '.')
+     print('\nO volume dos efeitos sonoros foi alterado com sucesso!')
+  if conf == 4:
+     print('voltar')
+     break
+
+     # BOTÃO SAIR DO JOGO
+while resposta == 4:
+  print('\nEscolha uma opção')
+  print('\n[1 - SIM]\n[2 - NÃO]\n')
+  sair = int(input('Desejas realmente sair do jogo ? '))
+  if sair == 2:
+    print('TELA INICIAL\n \n[1 - COMEÇAR] \n[2 - CONTINUAR] \n[3 - CONFIGURAÇÕES] \n[4 - SAIR DO JOGO]\n')
+    resposta = int(input('Escolha uma opção: '))
+    while resposta == 1:
+      print(' ')
+      print('Você deseja começar um novo progresso ?')
+      print('[5 - VOLTAR] \n[6 - CONFIRMAR]')
+      resposta = int(input(' \nEscolha uma opção: '))
+      while resposta == 5: 
+        print('TELA INCIAL\n')
+        print('TELA INICIAL\n \n[1 - COMEÇAR] \n[2 - CONTINUAR] \n[3 - CONFIGURAÇÕES] \n[4 - SAIR DO JOGO]\n')
+        resposta = int(input('Escolha uma opção: '))
+      if resposta == 6:
+        print(' ')
+        print('Bem vindo ao jogo!!! Esta é a cidade do Recife, uma cidade que apresenta problemas de água e saneamento básico.')
+        nome_progresso = input('Digite o nome do progresso: ')
+        print(' ')
+        print('O progresso {} foi salvo com sucesso. Bem vindo!!!'.format(nome_progresso))
+    while resposta == 3:
+      print('\nTELA DE CONFIGURAÇÕES\n')
+      print('[1 - GRÁFICOS] \n[2 - VOLUME DA MÚSICA] \n[3 - VOLUME DOS EFEITOS SONOROS] \n[4 - VOLTAR]')
+      conf = int(input('\nDigite o número da opção que deseja:\n'))
+      if conf == 1: 
+        print('\nQual gráfico você gostaria de utilizar?\n')
+        print('[4 - LEVE] \n[5 - MÉDIO] \n[6 - ALTO]')
+        grafico = int(input('\nDigite o número da opção de gráfico\n'))
+        if grafico == 4: # BAIXO
+          print('\nSeu gráfico foi modificado para leve com sucesso! Seu jogo ficará com o gráfico mais suave.')
+          break # Voltar para a página "CONFIGURAÇÕES"
+        if grafico == 5: #MÉDIO
+          print('\nSeu gráfico foi modificado para médio com sucesso! Seu jogo ficará com o gráfico mais mediano.')
+          break # Voltar para a página "CONFIGURAÇÕES"
+        if grafico == 6: # ALTO
+          print('\nSeu gráfico foi modificado para alto com sucesso! Seu jogo ficará com o gráfico mais pesado.')
+          break # Voltar para a página "CONFIGURAÇÕES"
+      if conf == 2:
+        print('\nDigite de 0 a 100 para definir o volume da música\n')
+        musica = int(input('Digite o volume da música: '))
+        print(musica * '.')
+        print('\nO volume da musica foi alterado com sucesso!')
+        break
+      if conf == 3:
+        print('\nDigite de 0 a 100 para definir o volume dos efeitos sonoros\n')
+        efeito_s = int(input('Digite o volume dos efeitos sonoros: '))
+        print(efeito_s * '.')
+        print('\nO volume dos efeitos sonoros foi alterado com sucesso!')
+        break
+      if conf == 4:
+        print('voltar')
+        break
+  if sair == 1:
+    print('\nSair do jogo')
+    break
